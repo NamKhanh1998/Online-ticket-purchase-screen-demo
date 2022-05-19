@@ -1,0 +1,509 @@
+
+.main {
+    overflow: hidden;
+}
+.header {
+    background-color: var(--black-color);
+    height: 46px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+
+
+.nav {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.nav li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav > li:hover > a {
+    color: black;
+    background-color: #ccc;
+    
+}
+
+.nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.nav  li:last-child:hover .subnav{
+    display: block;
+}
+
+.nav  li  a {
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+}
+
+.nav-icon {
+    margin-left: 4px;
+}
+
+.subnav {
+    position: absolute;
+    padding-left: 0;
+    background-color: var(--white-color);
+    width: 164px;
+    display: block;
+    box-shadow: 0px 4px 14px rgb(0 0 0 / 10%);
+    display: none;
+}
+
+
+.subnav-item a {
+    color: var(--black-color);
+    display: block;
+}
+
+.subnav-item {
+    width: 100%;
+}
+.subnav-item:hover {
+    background-color: #ccc;
+}
+
+.search {
+    cursor: pointer;
+    float: right;
+}
+
+.search:hover {
+    background-color: #f44336;
+}
+
+.search__icon {
+    font-size: 2rem;
+    color: var(--white-color);
+    padding: 0 24px;
+    line-height: 46px !important;
+}
+
+/* Moble header */
+
+.header__mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__home {
+    padding: 0 24px;
+    display: none;
+}
+
+.header__home-link {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.8rem;
+    line-height: 46px;
+    font-weight: 350;
+}
+
+.header__bars {
+    padding: 0 20px;
+    display: none;
+}
+
+.header__bars:hover {
+    background-color: #ccc;
+}
+.header__bars:hover .header__bars-icon {
+    color: var(--black-color);
+}
+
+.header__bars-icon {
+    color: var(--white-color);
+    font-size: 2rem;
+    line-height: 46px !important;
+}
+
+.mobile__bars-menu {
+    position: fixed;
+    background-color: var(--black-color);
+    top: 46px;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+.mobile__bars-menu-list {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    
+}
+
+.mobile__bars-menu-item {
+    color: var(--white-color);
+    font-size: 1.8rem;
+    line-height: 48px;
+    font-weight: 350;
+    padding-left: 24px;
+}
+
+.mobile__bars-menu-item:hover {
+    background-color: #ccc;
+    color: var(--black-color);
+}
+
+#mobile__menu:checked ~.mobile__bars-menu {
+    display: block;
+}
+
+
+
+
+
+
+.slider {
+    background: url('https://www.w3schools.com/w3images/chicago.jpg') top center / cover no-repeat;
+    padding-top: 50%;
+    position: relative;
+    margin-top: 46px;
+}
+
+.slider1 {
+    background: url('https://www.w3schools.com/w3images/la.jpg') top center / cover no-repeat;
+    padding-top: 50%;
+    position: relative;
+    margin-top: 46px;
+}
+
+.slider2 {
+    background: url('https://www.w3schools.com/w3images/ny.jpg') top center / cover no-repeat;
+    padding-top: 50%;
+    position: relative;
+    margin-top: 46px;
+}
+
+.slider-show {
+    display: block;
+}
+
+.active {
+    display: block;
+}
+
+
+.slider__img {
+    
+}
+
+.text-content {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: 46px;
+    transform: translateX(-50%);
+}
+
+.text-heading {
+    color: var(--white-color);
+    font-size: 3rem;
+}
+
+.text-description {
+    color: var(--white-color);
+    font-size: 1.8rem;
+}
+
+/* COntent */
+
+.content {
+    
+}
+
+.content__info {
+    text-align: center;
+    padding: 88px 16px 120px;
+}
+
+.content__heading {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+
+.content__title {
+    display: block;
+    margin-top: 30px;
+    font-size: 1.6rem;
+    font-style: italic;
+    color: #949494;
+}
+
+.content__description {
+    font-size: 1.4rem;
+    text-align: justify;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin-top: 24px;
+}
+
+
+.member__name {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.member__img {
+    height: 180px;
+    width: 156px;
+    border-radius: 4px;
+}
+
+/* content tour */
+
+.content__tour {
+    background-color: var(--black-color);
+    padding-top: 48px;
+    padding-bottom: 115px;
+}
+
+.tour-content {
+    text-align: center;
+    width: 250px;
+    width: 100%;
+}
+
+.tour-content__heading {
+    color: var(--white-color);
+    font-size: 3.5rem;
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+
+.tour-content__description {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #898989;
+    font-style: italic;
+    margin-bottom: 46px;
+}
+
+.tour-calendar {
+    background-color: var(--white-color);
+    
+}
+
+.tour-calendar ul {
+    padding-left: 0;
+    margin-bottom: 25px;
+}
+
+.tour-calendar__month {
+    list-style: none;
+    font-size: 1.8rem;
+    padding: 8px 16px;
+    line-height: 30px;
+    color: #757575;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.tour-calendar__month:hover {
+    background-color: #ededed;
+}
+
+.tour-calendar__sold-out {
+    margin-left: 16px;
+    background-color: red;
+    color: var(--white-color);
+    padding: 0 9px;
+}
+
+.tour-quanity {
+    color: var(--white-color);
+    float: right;
+    background-color: var(--black-color);
+    padding: 0 10px;
+    border-radius: 24px;
+    margin-right: 15px;
+}
+
+.tour-ticket {
+    background-color: var(--black-color);
+    margin: 30px auto;
+    display: flex;
+    padding-bottom: 116px;
+}
+
+.ticket {
+    background-color: var(--black-color);
+    
+}
+.ticket-info {
+    background-color: var(--white-color);
+    padding: 16px;
+}
+
+.ticket__img {
+    width: 100%;
+    position: relative;
+    top: 5px;
+}
+
+.ticket__img:hover {
+    filter: brightness(70%);
+}
+
+.ticket__location {
+    font-size: 1.5rem;
+    color: var(--black-color);
+    margin: 15px 0;
+}
+
+.ticket__date {
+    font-size: 1.8rem;
+    color: #757575;
+
+}
+
+.ticket__description {
+    font-size: 1.55rem;
+    line-height: 25px;
+}
+
+.ticket__buy-btn {
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1.8rem;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.ticket__buy-btn:hover {
+    background-color: #ccc;
+    color: var(--black-color);
+}
+
+/* content__contact */
+
+.content__contact {
+    padding: 64px 16px;
+    
+}
+
+
+.contact-heading {
+    text-align: center;
+}
+
+.contact-heading h3 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 4px;
+}   
+
+.contact-heading p {
+    font-size: 1.6rem;
+    font-style: italic;
+    color: #8d8d8d;
+    margin: 28px 0 52px 0;
+}
+
+.contact-info-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info {
+
+}
+
+.contact-info p {
+    font-size: 1.8rem;
+    margin: 14px 0;
+}
+.contact-info-icon {
+    margin-right: 16px;
+}
+
+.contact-input {
+    width: 385px;
+}
+
+.contact-input__info {
+    height: 45px;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-weight: 350;
+}
+
+.contact-input__info-name {
+    width: 100%
+}
+
+.contact-input__info-mail {
+    width: 100%;
+    
+}
+
+.contact-input__info-mess {
+    width: 100%;
+}
+
+
+.contact-input__btn {
+    border: none;
+    background: var(--black-color);
+    color: var(--white-color);
+    font-size: 2rem;
+    padding: 8px 16px;
+    float: right;
+    font-weight: 300;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.contact-input__btn:hover {
+    background-color: #ccc;
+    color: var(--black-color);
+}
+
+.content-img__img {
+    width: 100%;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.social i {
+    font-size: 3rem;
+    color: #666;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.social i:hover {
+    color: #afafaf;
+}
+
+.social__policy {
+    color: #808080;
+    font-size: 2rem;
+    font-weight: 300;
+}
+

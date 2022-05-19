@@ -1,0 +1,58 @@
+
+/* Mobile and Tablet */
+@media (max-width: 1023px) {
+    
+
+}
+
+/* Mobile*/
+@media (max-width: 739px) {
+    .nav {
+        display: none;
+    }
+    .text-content {
+        display: none;
+    }
+    .search {
+        display: none;
+    }
+    .tour-calendar {
+        background-color: var(--black-color);
+        
+    }
+    .tour-calendar ul {
+        padding-left: 0;
+        margin-bottom: 25px;
+        background-color: var(--white-color);
+        margin: 12px;
+    }
+    .header__home {
+        display: block;
+    }
+    .header__bars {
+        display: block;
+    }
+    .ticket {
+        padding-bottom: 10px;
+    }
+    .row.only2gutter {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .row.only2gutter .col {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+/*Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    .ticket {
+        margin-bottom: 20px;
+    }
+    .content__tour {
+        padding-bottom: 95px;
+    }
+    
+}
